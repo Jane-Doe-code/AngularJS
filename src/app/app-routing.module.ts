@@ -16,18 +16,17 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
-      { path: 'contact-us', component: ContactUsComponent }
-    ]
+      { path: 'contact-us', component: ContactUsComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'forgot-password', component: ForgotPasswordComponent },
+      { path: 'reset-password', component: ResetPasswordComponent },
+      { path: 'register', component: RegisterComponent },
+    ],
   },
-  { path: 'login', component: LoginComponent },
-  { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'reset-password', component: ResetPasswordComponent },
-  { path: 'register', component: RegisterComponent },
-  // Add more routes here
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
