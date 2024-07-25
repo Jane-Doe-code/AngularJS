@@ -1,0 +1,94 @@
+
+.contact-us-page {
+  background: linear-gradient(to bottom, #1e3c72, #2a5298, #ffffff);
+  color: #fff;
+  min-height: 100vh;
+}
+
+.contact-us-header {
+  padding: 50px 0;
+  background-color: #1e3c72;
+  color: #fff;
+}
+
+.contact-us-header h1 {
+  font-size: 2.5rem;
+}
+
+.contact-form .card {
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #ffc107;
+  border: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.contact-footer h5 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.contact-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-footer ul li {
+  margin-bottom: 10px;
+}
+
+.contact-footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.contact-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-form .card {
+    padding: 20px;
+  }
+}
+
+.bg-dark {
+  background-color: #00274c;
+}
+
+.text-light {
+  color: #f8f9fa;
+}
+
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.fa {
+  margin-right: 10px;
+}
