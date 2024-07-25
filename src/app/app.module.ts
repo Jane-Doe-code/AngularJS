@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,7 +13,11 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ResetPasswordComponent } from './pages/reset-password/reset-password.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { FooterComponent } from './shared/components/footer/footer.component';
+import { FooterComponent } from './shared/components/footer/footer.component'; // Import FooterComponent
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,8 +35,14 @@ import { FooterComponent } from './shared/components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    MatStepperModule,
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
