@@ -13,13 +13,12 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ResetPasswordComponent } from './pages/reset-password/reset-password.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { FooterComponent } from './shared/components/footer/footer.component'; // Import FooterComponent
+import { FooterComponent } from './shared/components/footer/footer.component';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { FormsModule } from '@angular/forms'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,16 +38,13 @@ import { FormsModule } from '@angular/forms'
     BrowserAnimationsModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule,,
+    FormsModule,
     MatStepperModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule,
-    FormsModule
+    ReactiveFormsModule
   ],
-  providers: [
-    provideAnimationsAsync()
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
