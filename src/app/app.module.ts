@@ -18,8 +18,18 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
+=======
+//
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatIconModule } from '@angular/material/icon';
+// import {provideNativeDateAdapter} from '@angular/material/core';
+>>>>>>> 1b32a0f691098e3ac2c74d872c1c065ceb9cc642
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +42,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     ResetPasswordComponent,
     RegisterComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +53,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatStepperModule,
     MatFormFieldModule,
     MatInputModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //
+    MatButtonModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatIconModule,
+    // provideNativeDateAdapter,
   ],
   providers: [
     provideAnimationsAsync()

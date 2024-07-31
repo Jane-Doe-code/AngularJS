@@ -1,1 +1,42 @@
-<p>register works!</p>
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="file-upload-form">
+
+  <h2>የምዝገባ ፎርም</h2>
+
+  <div class="form-group">
+    <label>የሰራ አስኪያጅ ሙሉ ስም</label>
+    <input matInput type="text" formControlName="managerFullName" required>
+  </div>
+
+  <div class="form-group">
+    <label>የግል ጥበቃ ድርጅት ስም</label>
+    <div class="file-input-wrapper">
+      <input matInput type="text" formControlName="personalSecurityCompanyName" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>የንግድ ፍቃድ</label>
+    <div class="file-input-wrapper">
+      <input type="file" (change)="onFileSelected($event, 'businessLicense')" required>
+      <mat-icon>attach_file</mat-icon>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>ቲን ነምበር</label>
+    <div class="file-input-wrapper">
+      <input type="file" (change)="onFileSelected($event, 'tinNumber')" required>
+      <mat-icon>attach_file</mat-icon>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>የሰራ አስኪያጅ የቀበሌ መታወቂያ</label>
+    <div class="file-input-wrapper">
+      <input type="file" (change)="onFileSelected($event, 'kebeleId')" required>
+      <mat-icon>attach_file</mat-icon>
+    </div>
+  </div>
+
+  <button mat-raised-button color="primary" type="submit">አስገባ</button>
+</form>
