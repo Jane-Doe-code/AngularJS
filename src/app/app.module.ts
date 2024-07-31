@@ -19,9 +19,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 =======
+=======
+>>>>>>> 1b32a0f691098e3ac2c74d872c1c065ceb9cc642
 //
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -29,6 +32,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 // import {provideNativeDateAdapter} from '@angular/material/core';
+<<<<<<< HEAD
+>>>>>>> 1b32a0f691098e3ac2c74d872c1c065ceb9cc642
+=======
 >>>>>>> 1b32a0f691098e3ac2c74d872c1c065ceb9cc642
 @NgModule({
   declarations: [
@@ -61,9 +67,12 @@ import { MatIconModule } from '@angular/material/icon';
     MatNativeDateModule,
     MatIconModule,
     // provideNativeDateAdapter,
+<<<<<<< HEAD
   ],
   providers: [
     provideAnimationsAsync()
+=======
+>>>>>>> 1b32a0f691098e3ac2c74d872c1c065ceb9cc642
   ],
   bootstrap: [AppComponent]
 })
