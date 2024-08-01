@@ -80,17 +80,7 @@ h3 {
     padding-bottom: 5px;
 }
 
-.side-by-side {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
 
-.side-by-side > div {
-    flex: 1;
-    min-width: 300px;
-}
 
 .step ul {
     list-style: none;
@@ -178,32 +168,7 @@ h5, h2, h3 {
     border-left: 4px solid #0056b3;
 }
 
-.side-by-side {
-    padding: 10px;
-    background: #ffffff;
-    border-radius: 5px;
-}
 
-.side-by-side > div {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-}
-
-.side-by-side > div h3 {
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.side-by-side > div ul li {
-    transition: transform 0.3s;
-}
-
-.side-by-side > div ul li:hover {
-    transform: scale(1.02);
-    background: #d3d3d3;
-}
 
 @keyframes fadeIn {
     from { opacity: 0; }

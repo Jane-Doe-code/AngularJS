@@ -24,6 +24,7 @@ import { MatCardModule } from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
+import { DocumentComponent } from './shared/components/document/document.component';
 // import {provideNativeDateAdapter} from '@angular/material/core';
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MatIconModule } from '@angular/material/icon';
     RegisterComponent,
     NavbarComponent,
     FooterComponent,
+    DocumentComponent,
   ],
   imports: [
     BrowserModule,
