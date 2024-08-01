@@ -1,13 +1,13 @@
 
 :host {
     display: block;
-    /* background: linear-gradient(to bottom, #1e3c72, #2a5298, #ffffff); */
     min-height: 100vh;
     padding-top: 20px;
     font-size:1rem;
   }
   .container {
     background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     border-radius: 8px;
     padding: 20px;
   }
