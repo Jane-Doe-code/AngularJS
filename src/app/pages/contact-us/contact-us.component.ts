@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { BackLinkServiceService } from '../../service/back-link-service.service'
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
   styleUrl: './contact-us.component.css'
 })
-export class ContactUsComponent {
+export class ContactUsComponent implements OnInit {
   contactForm = {
     name: '',
     email: '',
@@ -23,7 +24,11 @@ export class ContactUsComponent {
     }
    
     } 
-  } 
-  
- 
+    showBackLink:boolean=false;
+    constructor(private backLinkService:BackLinkServiceService){}
+
+  ngOnInit():void{
+    this.showBackLink=this.backLinkService.getFromSpecficLink();
+  }
+}
 
