@@ -5,9 +5,9 @@
   <div class="container contact-form">
     <div class="row justify-content-center">
       <div class="col-lg-8">
+        <a *ngIf="showBackLink" href="#step4">Back</a>
         <div class="card p-4 shadow">
           <h2 class="text-center mb-4">Get in touch</h2>
-
           <form (ngSubmit)="submitContactForm()">
             <div class="form-group">
               <input type="text" id="name" [(ngModel)]="contactForm.name" name="name" ngModel #name="ngModel" class="form-control" placeholder="Your Full Name" required>
@@ -33,11 +33,10 @@
             <div class="form-group">
               <textarea id="message" [(ngModel)]="contactForm.message" name="message" class="form-control" rows="5" placeholder="Your message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-warning btn-block mt-4">Submit</button>
+            <button type="submit" >Submit</button>
           </form>
         </div>
       </div>
     </div>
-    <div class="contact-details text-center mt-5">
-    </div>
+  
   </div>

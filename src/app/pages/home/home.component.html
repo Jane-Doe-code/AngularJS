@@ -137,10 +137,10 @@
 
       <p>Bring all the required information to the company.</p>
       <p>Submit the information, and you will be given an account.</p>
+     <strong style="color:rgb(211, 24, 24)"><p>NB.After Reading The Steps You Will Find A Button At The End To Register.</p></strong>
     </div>
 
-
-    <div class="step">
+    <div class="step active" id="step2">
       <h2>Step 2: Prepare Your Documents</h2>
     <p>Before you begin the application process, make sure you have the following <a routerLink="/documents" routerLinkActive="active">DOCUMNETS</a> ready. Take clear photos
         and scans of each document.</p>
@@ -158,12 +158,12 @@
       <p>Example: "YourName_Personal_Info.pdf", "Security_Agency_Info.pdf"</p>
     </div>
 
-    <div class="step">
+    <div class="step" id="step4">
       <h2>Step 4: Application Submission</h2>
       <p>Submit the two PDF files through the designated online portal or submission method specified by the Ethiopian
         Federal Police. Ensure that all documents are legible, up-to-date, and meet the specified requirements. We
         appreciate your commitment to becoming a registered Private Security Agent. If you encounter any difficulties
-        during the application process, feel free to <a routerLink="/contact-us" routerLinkActive="active">Contact-us</a>.</p>
+        during the application process, feel free to <a routerLink="/contact-us" routerLinkActive="active" (click)="setFromSpecficLink()">Contact-us</a>.</p>
     </div>
 
     <div class="step">
