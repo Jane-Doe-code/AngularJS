@@ -1,14 +1,29 @@
-fieldset {
-    background-color: #eeeeee;
-    text-align: center;
-  }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            display: flex; /* Use flexbox to arrange items side by side */
+            justify-content: space-between; /* Space between the fieldsets */
+        }
+        fieldset {
+            border: 2px solid #5cb85c;
+            border-radius: 8px;
+            padding: 15px;
+            background: white;
+            width: 45%; /* Set width for fieldsets */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 30px 0; /* Space around each fieldset */
+        }
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        input {
+            margin: 5px;
+        }
   
-  legend {
-    background-color: gray;
-    color: white;
-    padding: 5px 10px;
-  }
-  
-  input {
-    margin: 5px;
-  }

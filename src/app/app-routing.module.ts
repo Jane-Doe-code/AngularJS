@@ -8,6 +8,8 @@ import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ResetPasswordComponent } from './pages/reset-password/reset-password.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { DocumentComponent } from './shared/components/document/document.component';
+import { FormComponent } from './shared/components/form/form.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,8 @@ const routes: Routes = [
       { path: 'forgot-password', component: ForgotPasswordComponent },
       { path: 'reset-password', component: ResetPasswordComponent },
       { path: 'register', component: RegisterComponent },
+      { path:'documents',component:DocumentComponent},
+      { path: 'form', component:FormComponent}
     ],
   },
 ];

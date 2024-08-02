@@ -1,12 +1,134 @@
-<fieldset>
-    <legend>FORM</legend>
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email"><br><br>
-    <label for="birthday">Birthday:</label>
-    <input type="date" id="birthday" name="birthday"><br><br>
-    <input type="submit" value="Submit">
-  </fieldset>
+        <!-- 
+        
+            <legend>PERSONAL INFORMATION</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+        
+        <fieldset>
+            <legend>AGENCY INFORMATION</legend>
+            <label for="fname2">First name:</label>
+            <input type="text" id="fname2" name="fname"><br><br>
+            <label for="lname2">Last name:</label>
+            <input type="text" id="lname2" name="lname"><br><br>
+            <label for="email2">Email:</label>
+            <input type="email" id="email2" name="email"><br><br>
+            <label for="birthday2">Birthday:</label>
+            <input type="date" id="birthday2" name="birthday"><br><br>
+            <input type="submit" value="Submit">
+ 
+-->
+            <!--
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload Form</title>
+    
+</head>
+<body>
+    <h1>Insert your file</h1>
+    <div class="container">
+        <fieldset>
+            <legend>Persenal Information</legend>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="imageUpload1">Choose an image to upload:</label><br>
+                <input type="file" id="imageUpload1" name="image" accept="image"><br><br>
+                <input type="submit" value="Upload Image">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Agency Information</legend>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="imageUpload2">Choose an image to upload:</label><br>
+                <input type="file" id="imageUpload2" name="image" accept="image"><br><br>
+                <input type="submit" value="Upload Image">
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            display: flex; /* Use flexbox to arrange items side by side */
+            justify-content: space-between; /* Space between the fieldsets */
+        }
+        fieldset {
+            border: 2px solid #5cb85c;
+            border-radius: 8px;
+            padding: 15px;
+            background: white;
+            width: 45%; /* Set width for fieldsets */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 30px 0; /* Space around each fieldset */
+        }
+        legend {
+            background-color: gray;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        input {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload a PDF</h1>
+    <div class="container">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="return validatePDF('imageUpload1')">
+                <label for="imageUpload1">Choose a PDF to upload:</label><br>
+                <input type="file" id="imageUpload1" name="file" accept="application/pdf" required><br><br>
+                <input type="submit" value="Upload PDF">
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend>Agency Information</legend>
+            <form action="/upload" method="post" enctype="multipart/form-data" onsubmit="return validatePDF('imageUpload2')">
+                <label for="imageUpload2">Choose a PDF to upload:</label><br>
+                <input type="file" id="imageUpload2" name="file" accept="application/pdf" required><br><br>
+                <input type="submit" value="Upload PDF">
+            </form>
+        </fieldset>
+    </div>
+
+    <script>
+        function validatePDF(inputId) {
+            var fileInput = document.getElementById(inputId);
+            var filePath = fileInput.value;
+            var allowedExtensions = /(\.pdf)$/i;
+            if (!allowedExtensions.exec(filePath)) {
+                alert('Please upload a file having extensions .pdf only.');
+                fileInput.value = '';
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
+

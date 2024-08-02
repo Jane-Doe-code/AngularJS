@@ -18,14 +18,19 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+<<<<<<< HEAD
+<<<<<<< HEAD
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
+=======
+=======
+>>>>>>> 1b32a0f691098e3ac2c74d872c1c065ceb9cc642
 //
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
-import { DocumentComponent } from './shared/components/document/document.component';
 // import {provideNativeDateAdapter} from '@angular/material/core';
 
 @NgModule({
@@ -41,7 +46,6 @@ import { DocumentComponent } from './shared/components/document/document.compone
     RegisterComponent,
     NavbarComponent,
     FooterComponent,
-    DocumentComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,6 +67,8 @@ import { DocumentComponent } from './shared/components/document/document.compone
   ],
   providers: [
     provideAnimationsAsync()
+=======
+>>>>>>> 1b32a0f691098e3ac2c74d872c1c065ceb9cc642
   ],
   bootstrap: [AppComponent]
 })
