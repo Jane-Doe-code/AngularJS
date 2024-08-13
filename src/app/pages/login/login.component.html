@@ -12,6 +12,16 @@
         <input formControlName="password" type="password" required>
         <label>Password</label>
       </div>
+      <div class="input-box" style="overflow-y:hidden;">
+        <mat-icon class="icon">person</mat-icon>
+        <select>
+          <option value="" disabled selected>Select Your Role</option>
+          <option value="Admin">Admin</option>
+          <option value="Manager">Manager</option>
+          <option value="Reviwer">Reviwer</option>
+        </select>
+        <label>Role</label>
+      </div>
       <div class="remember-forget">
         <label><input formControlName="rememberMe" type="checkbox">Remember me</label>
         <a routerLink="/forgot-password" routerLinkActive="active">Forgot Password?</a>

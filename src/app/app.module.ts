@@ -27,6 +27,9 @@ import { MatCardModule } from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
+import { ToastrModule } from 'ngx-toastr';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // import {provideNativeDateAdapter} from '@angular/material/core';
 
 @NgModule({
@@ -59,7 +62,11 @@ import { MatIconModule } from '@angular/material/icon';
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
-    // provideNativeDateAdapter,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot(),
+    ToastrModule.forRoot(),
+    FontAwesomeModule,
+
   ],
   providers: [
     provideAnimationsAsync()
